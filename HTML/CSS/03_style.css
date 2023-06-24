@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./Photo.jpg);
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.sub-container {
+    width: 50%;
+    height: 50%;
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7%;
+    gap: 5%;
+}
+
+h2 {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+input {
+    width: 300px;
+    padding: 10px;
+    font-family: cursive;
+    outline: none;
+    border: none;
+}
+
+.btn {
+    width: 150px;
+    background-color: lawngreen;
+    color: black;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}

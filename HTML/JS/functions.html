@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <title>Functions</title>
+</head>
+
+<body>
+     <h2>JavaScript Functions</h2>
+     <p>This example calls a function which performs a calculation, and returns the result:</p>
+     <p id="hello"></p>
+     <p id="demo"></p>
+     <p id="demo2"></p>
+     <p id="demo3"></p>
+     <p id="demo4"></p>
+     <script>
+          let name = prompt("Enter Your Name: ");
+          //Create an Function
+          function hello(name) {
+               document.getElementById("hello").innerHTML = "Hello " + name;
+          }
+          hello(name); //Calling to Function
+          function add(p1, p2) {
+               return p1 + p2;
+          }
+          document.getElementById("demo").innerHTML = "Addition is " + add(4, 3);
+          function sub(p3, p4) {
+               return p3 - p4;
+          }
+          document.getElementById("demo2").innerHTML = "Subtraction is " + sub(7, 4);
+          function multi(p5, p6) {
+               return p5 * p6;
+          }
+          document.getElementById("demo3").innerHTML = "Multiplication is " + multi(3, 6);
+          function div(p7, p8) {
+               return p7 / p8;
+          }
+          document.getElementById("demo4").innerHTML = "Division is " + div(7, 8);
+     </script>
+<!--
+//Create an Function
+function hello(){
+     let name = prompt("Enter Your Name: ");
+     document.getElementById("hello").innerHTML = "Hello " + name;
+}
+hello(); //Calling to Function
+-->
+
+</body>
+
+</html>

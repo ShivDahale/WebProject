@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Functions</title>
+</head>
+
+<body>
+    <h3>JavaScript Functions</h3>
+    <p id="demo"></p>
+    <script>
+        function add(p1, p2) {
+            let a, b, c, d;
+            let a1;
+            a = p1 + p2;
+            b = p1 - p2;
+            c = p1 * p2;
+            d = p1 / p2;
+            a1 = "Addition is " + a + "<br>Subtraction is " + b + "<br>Multiplication is " + c + "<br>Division is " + d;
+            return a1;
+        }
+        document.getElementById("demo").innerHTML = add(4, 3);
+    </script>
+</body>
+
+</html>

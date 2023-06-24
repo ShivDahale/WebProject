@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>output</title>
+    <link rel="stylesheet" href="03_style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sub-container">
+            <h2>Enter the url</h2>
+            <div class="content">
+                <input type="text" id="original_link">
+                <button class="btn" id="generate">Generated</button>
+            </div>
+            <h2>Shorten url</h2>
+            <div class="content">
+                <input type="text" id="shorten_link">
+                <button class="btn" id="copy">copy</button>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        let original_link = document.getElementById("original_link");
+        let generate = document.getElementById("generate");
+        let shorten_link = document.getElementById("shorten_link");
+        let copy = document.getElementByIddocument("copy");
+
+        generate.addEventListener("click", () => {
+            let url = original_link.value;
+            fetch('htpps://api.shrtco.de/v2/shorten?url=${url}')
+                .then((resp) => resp.json())
+                .then((value) => {
+                    shorten_link.value = "value.result.short_link";
+                })
+                .catch((error) => {
+                    shorten_link.value = "something went worng";
+                });
+
+        });
+
+        copy.addEventListener("click", () => {
+            navigator.clipboard.writeText(shorten_link.value);
+            copy.innerhtml = "copied!!";
+            setTimeout(() => {
+                copy.innerHtml = "copy";
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>

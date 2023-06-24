@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>1.html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: lightskyblue;
+            border: 10px;
+            border-radius: 4px solid black;
+            text-align: center;
+        }
+
+        .contain {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(131, 172, 243, 0.5);
+            width: 400px;
+            padding: 80px 0 20px 0;
+            border-radius: 30px;
+        }
+
+        .btn img {
+            position: absolute;
+            left: 25%;
+            margin-top: 2px;
+            padding: 3px;
+            width: 30px;
+            background-color: white;
+        }
+
+        h1{
+            margin-bottom: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        input[type=submit] {
+            background-color: rgb(34, 179, 228);
+            color: white;
+            margin-top: 20px;
+            padding: 10px 50px;
+            border: none;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        input {
+            border: none;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contain">
+        <form>
+            <H1>SIGN UP</H1>
+            <div class="btn">
+                <img src="contact .png">
+                <input type="text" placeholder="     Username">
+                <div class="btn">
+                    <img src="Email.png">
+                    <input type="text" placeholder="     E-mail">
+                </div>
+                <div class="btn">
+                    <img src="lock-icon-11.png">
+                    <input type="password" placeholder="     Password">
+                </div>
+                <div class="btn">
+                    <img src="lock-icon-11.png">
+                    <input type="password" placeholder="     Conform Password">
+                </div>
+                <input type="submit" value="CREATE ACCOUNT"><br><br>
+                <a href="project.html">Already have an account? Login here</a>
+        </form>
+    </div>
+</body>
+
+</html>

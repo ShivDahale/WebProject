@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Arrow_Function</title>
+</head>
+
+<body>
+    <h5>Arrow Function</h5>
+    <p id="demo"></p>
+    <p id="hello"></p>
+    <script>
+        let add = (a, b) => a + b;
+        document.getElementById("demo").innerHTML = add(6, 7);
+        let name = prompt("Enter Name: ");
+        hello = () => {
+            document.getElementById("hello").innerHTML += name;
+        }
+        hello();
+    </script>
+</body>
+
+</html>

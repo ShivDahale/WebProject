@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>form</title>
+    <style>
+        body {
+            background-image: url(./nature.jpg);
+            text-align: center;
+            width: 90;
+            background-size: cover;
+            color: #fff;
+
+        }
+
+        input[ type="text"] {
+            text-align: left;
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid #fff;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(241, 243, 243);
+            text-align: center;
+            padding: 3px;
+            border: none;
+            font-weight: bold;
+        }
+
+        form {
+            background-color: rgba(12, 12, 12, 0.4);
+            color: lightblue;
+            width: 300px;
+            margin-left: 30%;
+            padding-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        ::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: white;
+            opacity: 1;
+            /* Firefox */
+        }
+
+        :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: white;
+        }
+
+        ::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> PUBG Registaion form</h1>
+    <form>
+        <br><br>
+        Name: <input type="text" placeholder="Enter your name">
+        <br><br>
+        Last name: <input type="text" placeholder="Enter your last name">
+        <br><br>
+        Age: <input type="text" placeholder="Enter your age">
+        <br><br>
+        Phone No:<input type="text" placeholder="Enter your number">
+        <br><br>
+        Email :<input type="text" placeholder="Enter your E-mail">
+        <br><br>
+        Gender: <input type="radio" name="gender">male
+        <input type="radio" name="gender">female
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>

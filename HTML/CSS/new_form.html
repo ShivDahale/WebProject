@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>New form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            text-align: center;
+            padding: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h5 {
+            text-align: center;
+            padding: 5px 20px;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        input[type="submit"] {
+            padding: 6px 40px;
+            background-color: purple;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .top_bar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-top: 10px;
+            margin-left: 5px;
+            background-color: lightgray;
+            border: 1px solid black;
+            width: 99%;
+            height: 40px;
+            text-align: left;
+            color: purple;
+        }
+
+        .logo {
+            font-size: 30px;
+        }
+
+        .login {
+            color: #000;
+        }
+
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        .contain {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .conatiner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 125px;
+            background: none;
+            border: none;
+            border: 1px solid lightgray;
+            padding: 5px;
+            margin-left: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .btn img {
+            width: 40px;
+            padding: 10px;
+        }
+
+        .bor {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            outline: 2px dashed purple;
+            margin-top: 10px;
+            width: 700px;
+        }
+
+        .bor img {
+            width: 50px;
+        }
+
+        h2,
+        h4 {
+            text-align: left;
+        }
+
+        .bor p {
+            font-size: 16px;
+        }
+
+        .form_register {
+            width: 400px;
+            padding: 10px 20px;
+        }
+
+        .free {
+            padding: 10px;
+            background-color: lightgreen;
+            color: #fff;
+            width: 120px;
+            text-align: center;
+            border-radius: 5px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top_bar">
+        <p class="logo">foundit</p>
+        <p class="login">Already Registered? Login</p>
+    </div>
+    <div class="main">
+        <h1>Create an Account</h1>
+        <h5>It only takes a couple of minutes to get started!</h5>
+        <p class="free">it's free!</p>
+    </div>
+    <div class="contain">
+        <div class="btn"><img src="linkedin.png"> LinkedIn</div>
+        <div class="btn"><img src="search.png"> Google</div>
+        <div class="btn"><img src="facebook.png"> Facebook</div>
+    </div>
+    <div class="conatiner">
+        <div class="bor">
+            <h2>Upload resume <p>*Doc,Docx,RTF,PDF(Max files size-6MB)</p>
+            </h2>
+            <img src="upload.png">
+        </div>
+    </div>
+    <h5>Profiles with resume are 3x more likely to be noticed by recruites.</h5>
+    <div class="conatiner">
+        <form class="form_register">
+            Full Name* <br>
+            <input type="text" placeholder="Enter your full name">
+            <br><br>
+            Email ID* <br>
+            <input type="text" placeholder="Enter your Email ID">
+            <br><br>
+            Password* <br>
+            <input type="password" placeholder="Minimum 6 characters">
+            <br><br>
+            Mobile Number* <br>
+            <select name="num_m" id="">
+                <option value="+91">+91</option>
+            </select>
+            <input type="text" placeholder="Enter Your Mobile Number">
+            <br><br>
+            Birthday* <br>
+            <select name="month" id="Birthday">
+                <option>Month</option>
+                <option>janaury</option>
+                <option>faburay</option>
+                <option>march</option>
+                <option>april</option>
+                <option>may</option>
+                <option>june</option>
+                <option>july</option>
+                <option>august</option>
+                <option>september</option>
+                <option>october</option>
+                <option>november</option>
+                <option>december</option>
+            </select>
+            <select name="Date" id="Birthday">
+                <option>Date</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+            </select>
+            <select name="year" id="Birthday">
+                <option>year</option>
+                <option>1991</option>
+                <option>1992</option>
+                <option>1993</option>
+                <option>1994</option>
+                <option>1995</option>
+                <option>1996</option>
+                <option>1997</option>
+                <option>1998</option>
+                <option>1999</option>
+                <option>2000</option>
+                <option>2001</option>
+                <option>2002</option>
+                <option>2003</option>
+                <option>2004</option>
+                <option>2005</option>
+            </select>
+            <br><br>
+            <input type="submit" value="continue">
+        </form>
+    </div>
+</body>
+
+</html>

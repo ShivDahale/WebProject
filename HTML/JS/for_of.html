@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For_in</title>
+</head>
+<body>
+    <h2>For of Loop</h2>
+    <p id="demo"></p>
+    <script>
+        let text = "";
+        const cars = ["BMW", "Volvo", "Mini"];
+        for (let x of cars) {
+            text += x + "<br><br>";
+        }
+        
+        const car = [10, 20, 30, 40];
+        for (let x of car) {
+            text += x + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+
+</html>

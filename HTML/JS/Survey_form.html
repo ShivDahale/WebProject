@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Survey Form</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            font-weight: bold;
+            padding: 10px;
+            outline: 2px solid #000;
+        }
+        h3{
+            font-weight: lighter;
+            font-family: cursive;
+            text-align: center;
+        }
+        span{
+            color: red;
+        }
+        input{
+            padding: 5px;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            border: none;
+            outline: 1px solid yellow;
+        }
+        select{
+            padding: 5px;
+            margin-left: 10px;
+        }
+        .ml60{
+            margin-left: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="contain">
+        <h3>Membership Satisfaction Survey</h3>
+        Name:<span>*</span>
+        <br>
+        <input type="text" placeholder="First">
+        <input type="text" placeholder="Last">
+        <br>
+        Address:<span>*</span><br>
+        <input type="text" placeholder="Street Address" style="width: 363px;">
+        <br>
+        <input type="text" placeholder="City">
+        <input type="text" placeholder="Region">
+        <br>
+        <input type="text" placeholder="Postal/ Zip Code">
+        <select name="Rominia" id="Rominia" style="width: 178px;">
+            <option>India</option>
+            <option>Australia</option>
+            <option>England</option>
+            <option>Iran</option>
+            <option>South Africa</option>
+            <option> Rominia</option>
+        </select>
+        <br>
+        Phone:
+        <br>
+        <!-- <select name="num_m" id="">
+            <option value="+91">+91</option>
+            <option>+7</option>
+            <option>+07</option>
+            <option>+902</option>
+            <option>+728</option>
+        </select> -->
+        <input type="text" placeholder="### ### ####" style="width: 363px;">
+        <br>
+        Account Number <br>
+        <small>(located in the top hand right corner of your billing statement in
+            bold)</small><span>*</span>
+        <br>
+        <input type="text" style="width: 363px;">
+        <br>
+        Email Address
+        <br>
+        <input type="email" style="width: 363px;">
+        <br>
+        <div class="redio">
+            1).How long have you been a member of X-company?<span>*</span>
+            <br>
+            <input type="radio" name="" id="">less than a year
+            <input type="radio" name="" id="">11-19 years <br>
+            <input type="radio" name="" id="">1-5 years
+            <input type="radio" name="" id="" class="ml60">20+years <br>
+            <input type="radio" name="" id="">6-10 years
+        </div>
+    </form>
+</body>
+
+</html>
