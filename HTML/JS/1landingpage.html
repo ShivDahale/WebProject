@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landingpage & navbar</title>
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        h1 {
+            text-align: center;
+            color: white;
+            margin: 20px;
+        }
+
+        p {
+            margin: 10px auto;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            position: absolute;
+            left: 30%;
+            display: inline-block;
+            margin: 5px;
+            padding: 20px;
+            background: #ffffff2b;
+            color: #fff;
+            border-radius: 20px;
+            text-align: center;
+            width: 550px;
+        }
+
+        .paragraph {
+            padding: 0 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 20px;
+            border: none;
+            background: #0082e6;
+            color: #fff;
+            font-weight: 900;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+
+        input {
+            width: 60%;
+            height: 30px;
+            border: none;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <label class="logo">DesingX</label>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <h1>DOWENLOAD YOUR COPY</h1>
+        <div>
+            <p>FIRST NAME *</p>
+            <input type="text" placeholder="FIRST NAME">
+            <p>LAST NAME *</p>
+            <input type="text" placeholder="LAST NAME">
+            <p>EMAIL *</p>
+            <input type=" input" placeholder="ENTER YOUR EMAIL">
+        </div>
+        <p class="paragraph">
+            We're committed to your privacy.
+            HubSpot used the information you provide to us to
+            contact you about our relevant content, product amd services. 
+            You may unsubscribe form these communication at any time. 
+            For more information check out our privacy policy.
+        </p>
+        <button type="button">DOWNLOAD NOW</button>
+    </main>
+</body>
+
+</html>
